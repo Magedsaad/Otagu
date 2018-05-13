@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trying.developing.otagu.fragments.SignInFragment">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fram1"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/email"
+            />
+    <EditText
+        android:background="#50FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emailsignin_id"
+        android:hint="    Email"
+        android:drawablePadding="5dp"
+        android:textColorHint="#ffff"
+        />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/fram1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/password"
+            android:layout_marginTop="19dp"
+            />
+
+        <EditText
+            android:background="#50FFFFFF"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/passwordsignin_id"
+            android:hint="    Password"
+            android:drawablePadding="5dp"
+            android:textColorHint="#ffff"
+            />
+
+    </FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:layout_below="@id/frame"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/camalcolor"
+            android:textColor="#fff"
+            />
+
+
+</RelativeLayout>

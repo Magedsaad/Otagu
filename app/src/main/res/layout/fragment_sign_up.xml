@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trying.developing.otagu.fragments.SignUpFragment">
+
+<EditText
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="15"
+    android:layout_centerHorizontal="true"
+    android:background="#50FFFFFF"
+    android:id="@+id/fullname_id"
+    android:drawableLeft="@drawable/user"
+    android:hint="    Full name"
+    android:textColorHint="#ffff"
+    />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:background="#50FFFFFF"
+        android:textColorHint="#ffff"
+        android:id="@+id/email_id"
+        android:layout_below="@+id/fullname_id"
+        android:drawableLeft="@drawable/email"
+        android:hint="     Email"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/password_id"
+        android:layout_below="@+id/email_id"
+        android:drawableLeft="@drawable/password"
+        android:hint="       Password"
+        android:background="#50FFFFFF"
+        android:textColorHint="#ffff"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign UP"
+        android:layout_below="@+id/password_id"
+        android:layout_centerHorizontal="true"
+        android:background="#f07d00"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>
