@@ -2,33 +2,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.trying.developing.otagu.fragments.SignInFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_height="wrap_content">
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="22sp"
+                android:text="Otagu"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
 
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fram1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/appBarLayout"
         android:layout_centerHorizontal="true">
 
         <ImageView
-            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:src="@drawable/email"
             />
-    <EditText
-        android:background="#50FFFFFF"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/emailsignin_id"
-        android:hint="    Email"
-        android:drawablePadding="5dp"
-        android:textColorHint="#ffff"
-        />
+        <EditText
+            android:background="#50FFFFFF"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/emailsignin_id"
+            android:hint="    Email"
+            android:drawablePadding="5dp"
+            android:textColorHint="#ffff"
+            />
 
     </FrameLayout>
 
@@ -37,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/frame"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         >
 
@@ -45,7 +87,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:src="@drawable/password"
-            android:layout_marginTop="19dp"
+            android:layout_gravity="center_vertical"
             />
 
         <EditText
@@ -56,23 +98,23 @@
             android:ems="12"
             android:layout_centerHorizontal="true"
             android:id="@+id/passwordsignin_id"
-            android:hint="    Password"
+            android:hint="Password"
             android:drawablePadding="5dp"
             android:textColorHint="#ffff"
             />
 
     </FrameLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign in"
-            android:layout_below="@id/frame"
-            android:layout_marginTop="15dp"
-            android:layout_centerHorizontal="true"
-            android:background="@color/camalcolor"
-            android:textColor="#fff"
-            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_below="@id/frame"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/camalcolor"
+        android:textColor="#fff"
+        />
 
 
 </RelativeLayout>
